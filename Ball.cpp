@@ -46,7 +46,7 @@ void Ball::move(Paddle left_paddle, Paddle right_paddle) {
         if ((right_paddle.position.y < sim_y) and (sim_y < right_paddle.position.y + right_paddle.height)) {
 
             int middle_paddle = (right_paddle.position.y + right_paddle.height/2);
-            int rel = abs(middle_paddle - sim_y);
+            int rel = abs(middle_paddle - sim_y); ///sim_y is y coordinate of the hitting ball
             int sign = (sim_y > middle_paddle)? 1: -1;
             momentum.x *= -1;
             momentum.y = (rel/15 + 5) * sign;

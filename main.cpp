@@ -187,9 +187,11 @@ int main()
                         case sf::Keyboard::Return:
                             switch (menu.GetPressedItem()) {
                                 case 0:
+                                    ///Player vs Player
                                     start_game(window, 2, false); ///Set number of balls as second argument
                                     break;
                                 case 1:
+                                    ///Player vs AI
                                     start_game(window, 2, true ); ///Set number of balls as second argument
                                     break;
                                 case 2:
