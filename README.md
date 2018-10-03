@@ -3,7 +3,7 @@ Pong supporting multiple balls, written in C++, using SFML library
 
 
 
-![](pong.gif)
+![](img/pong.gif)
 
 # Modes
 Game offers PvP mode and Player vs AI.
@@ -18,10 +18,12 @@ AI algorithm is the simplest one. In each frame algorithm calculates which ball 
 
 > Quantity of balls for each mode can be changed in start_game function call inside of the main game loop.
 
+![](img/ball_no.JPG)
+
 **Balls physics**
 
-Screen below, shows ball momentum change, when hitting right paddle.
+>Screen below, shows ball momentum change, when hitting right paddle.
 
+![](img/ball_physics.JPG)
 
-
-For left paddle it's almost the same. Only x sign changes
+>For left paddle it's almost the same. Only x sign changes
